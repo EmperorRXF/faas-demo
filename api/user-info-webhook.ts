@@ -24,8 +24,6 @@ export default async function (req: VercelRequest, res: VercelResponse) {
       }
     );
 
-    res.send(400).json({ error: "test error" });
-
     res.json({
       sub: userResponse.data.id,
       name: userResponse.data.name,
